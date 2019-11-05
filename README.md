@@ -3,6 +3,7 @@ Quarkus with JNoSQL integraton: CouchDB example
 
 
 # Quarkus init with
+
 mvn io.quarkus:quarkus-maven-plugin:0.28.0:create \
     -DprojectGroupId=py.com.icarusdb \
     -DprojectArtifactId=quarkus-jnosql-couchdb \
@@ -83,7 +84,6 @@ Listening for transport dt_socket at address: 5005
                 at io.quarkus.arc.processor.BeanInfo.init(BeanInfo.java:404)
                 at io.quarkus.arc.processor.BeanDeployment.init(BeanDeployment.java:212)
                 ... 14 more
-
         at io.quarkus.runner.RuntimeRunner.run(RuntimeRunner.java:157)
         at io.quarkus.dev.DevModeMain.doStart(DevModeMain.java:176)
         at io.quarkus.dev.DevModeMain.start(DevModeMain.java:94)
@@ -126,7 +126,6 @@ Caused by: io.quarkus.builder.BuildException: Build failure: Build failed due to
                 at io.quarkus.arc.processor.BeanInfo.init(BeanInfo.java:404)
                 at io.quarkus.arc.processor.BeanDeployment.init(BeanDeployment.java:212)
                 ... 14 more
-
         at io.quarkus.builder.Execution.run(Execution.java:108)
         at io.quarkus.builder.BuildExecutionBuilder.execute(BuildExecutionBuilder.java:121)
         at io.quarkus.deployment.QuarkusAugmentor.run(QuarkusAugmentor.java:130)
@@ -171,5 +170,4 @@ Caused by: javax.enterprise.inject.spi.DeploymentException: Found 2 deployment p
                 ... 14 more
 
 16:38:14,979 INFO  [io.qua.dev.DevModeMain] Attempting to start hot replacement endpoint to recover from previous Quarkus startup failure
-
  
